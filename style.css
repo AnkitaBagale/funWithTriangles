@@ -1,0 +1,107 @@
+:root{
+    --primary-color: #1E3A8A;
+    --secondary-color: #3B82F6;
+}
+
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background-image: url('bgTriangles.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+.grid{
+    display: flex;
+}
+
+.verticalMiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.cell{
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 100px;
+    margin: 0.2rem 0.2rem 0.4rem;
+    padding: 1rem;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color:var(--primary-color);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.col a:hover .cell{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+.section{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.inputBox{
+    background-color: var(--secondary-color);
+    border:2px solid var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.button{
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+}
+
+.button:hover{
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.backCTAContainer{
+    padding: 2rem 0rem 0rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.backCTAContainer a{
+font-weight: bold;
+color: var(--primary-color);
+}
+.backCTAContainer a:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+#isTriangle{
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
