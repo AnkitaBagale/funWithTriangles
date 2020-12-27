@@ -1,6 +1,7 @@
 :root{
     --primary-color: #1E3A8A;
     --secondary-color: #3B82F6;
+    --off-white: #60A5FA;
 }
 
 *{
@@ -65,9 +66,15 @@ a{
     background-color: var(--secondary-color);
     border:2px solid var(--primary-color);
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1.5rem 0.2rem;
+    height: 20px;
+    width: 50px;
+    overflow: scroll;
 
 }
+.inputBox::-webkit-scrollbar {
+    width: 0px;
+  }
 
 .button{
     display: block;
@@ -88,9 +95,14 @@ a{
 }
 
 .backCTAContainer{
-    padding: 2rem 0rem 0rem;
+    margin: 2rem auto 0rem;
     color: var(--primary-color);
     font-size: 1.2rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+
+    border-radius: 1.5rem;
+    background-color: white;
 }
 .backCTAContainer a{
 font-weight: bold;
@@ -104,4 +116,127 @@ color: var(--primary-color);
 #isTriangle{
     margin: 1rem 0;
     padding: 1rem 0;
+}
+#hypShow, #areaShow{
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: fit-content;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.label{
+    font-weight: bold;
+}
+
+/* triangle grahics in html and css */
+.triangle div{
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.triangle{
+    position: relative;
+    width: 104px;
+    height: 104px;
+    margin: 0 auto 20px;
+
+}
+.triangle label{
+    position: absolute;
+    font-size: 0.8rem;
+}
+    
+.sideA{
+    left: -15px;
+    top: 45px;
+}
+.sideB{
+    left: 45px;
+    top:105px;
+}
+.sideC{
+    left: 50px;
+    top: 35px;
+}
+.heightH{
+    left: 25px;
+    top:75px;
+}
+.angleA{
+    left: 75px;
+    top:87px;
+}
+.triangle .line1{
+    width: 100px;
+    bottom: -102px;
+    
+}
+
+.triangle .line2{
+    width: 100px;
+    transform: rotate(90deg);
+    top: 50px;
+    left: -50px;
+}
+.triangle .line3{
+    width: 141.42px;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -20px;
+}
+.triangle .line4{
+    width: 71px;
+    transform: rotate(135deg);
+    left:-12px;
+    top: 72px
+}
+.triangle .line5{
+    width: 8px;
+    transform: rotate(135deg);
+    left:50px;
+    top: 55px;
+}
+.triangle .line6{
+    width: 12px;
+    transform: rotate(45deg);
+    left:41px;
+    top: 50px;
+}
+.line{
+    position: relative;
+    bottom: -100px;
+}
+
+
+.formulaSelectionForm{
+    text-align: left;
+}
+
+
+
+.areaCalBlock{
+display: none;
+}
+
+.formQuiz{
+    text-align: left;
+}
+.formQuiz label.question{
+    display: block;
+}
+.radio input{
+cursor: pointer;
+padding: 0.5rem 0.5rem;
+display: inline-block;
+}
+
+.radio label{
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+}
+.ow{
+    background-color: var(--off-white);
+    margin-top: 1rem;
 }

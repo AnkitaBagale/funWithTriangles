@@ -14,14 +14,52 @@
 <body>
     <div class="verticalMiddle">
         <section class="section">
-                <div class="backCTAContainer">
-                    <i class="fas fa-chevron-left"></i><a href="/index.html">Go Back</a>
-                </div>
+            <div class="backCTAContainer">
+                <i class="fas fa-chevron-left"></i><a href="/index.html">Go Back</a>
+            </div>
+            <h1>Enter the lengths of sides of right angle triangle</h1>
+            <div class="triangle">
+                <label class="label sideA">a</label>
+                <label class="label sideB">b</label>
+                <label class="label sideC">c</label>
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            
+            <form class="form" id="formHyp">
                 
+                <label class="label">a=</label>
+                <input class="inputBox inputSide" type="number" min="0.0001" step="0.00001" required>
+                <label class="label">b=</label>
+                <input class="inputBox inputSide" type="number" min="0.0001" step="0.00001" required>
+                <button class="button" id="submitBtn">submit</button>
+            </form>
+            <h2>Hypotenuse will be calculated here-</h2>
+            <div id="hypShow">
+                <label class="label">C=</label>
+                <div style="display:inline;" class="hypShowHere"><span style="font-size: 1.8rem;">√</span><span style="border-top:2px solid black; padding-top:0.1rem;">a<sup>2</sup>+b<sup>2</sup></span></div>
+            </div>                
         </section>
     </div>
     
     <footer></footer>
+
+    <script>
+        var inputSides= document.querySelectorAll(".inputSide");
+        var lengthA, lengthB;
+        var formHyp = document.querySelector("#formHyp");
+        var hypotenuse= document.querySelector(".hypShowHere");
+        formHyp.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            lengthA = Number(inputSides[0].value);  
+            lengthB = Number(inputSides[1].value);  
+            
+            hypotenuse.innerText = Math.sqrt((lengthA*lengthA) + (lengthB*lengthB));
+            
+        })
+
+    </script>
 
 </body>
 </html>

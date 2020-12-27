@@ -1,6 +1,6 @@
 
 var formTriangle = document.querySelector('#formTriangle');
-var inputAngles = document.querySelectorAll('.inputBox');
+var inputAngles = document.querySelectorAll('.inputAngle');
 var outputDiv= document.querySelector('#isTriangle');
 
 var anglesJS=[];
