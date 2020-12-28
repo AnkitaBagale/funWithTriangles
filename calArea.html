@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun With Triangles</title>
     <meta name="author" content="Ankita Bagale">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,8 +36,6 @@
                     <input type="radio" id="calArea3" name="areaCalOption" value="areaCalOption3">
                     <label class="label" for="calArea3">If you have length of 2 sides and included angle</label>
                 </div>
-                
-                <button class="button" id="contToCalArea">continue</button>
             </form>
 
             <!-- area calculation 1st formula -->
@@ -61,7 +61,7 @@
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
                 <h2>Area will be calculated here-</h2>
-                <div id="areaShow">
+                <div class="outputHere">
                     <label class="label">Area=</label>
                     <div style="display:inline;" class="areaShowHere">1/2*base*height</div>
                 </div>
@@ -90,7 +90,7 @@
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
                 <h2>Area will be calculated here-</h2>
-                <div id="areaShow">
+                <div class="outputHere">
                     <label class="label">Area=</label>
                     <div style="display:inline;" class="areaShowHere"><span style="font-size: 1.8rem;">√</span><span style="border-top:2px solid black; padding-top:0.1rem;">s(s-a)(s-b)(s-c)</span></div>
                 </div>
@@ -119,7 +119,7 @@
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
                 <h2>Area will be calculated here-</h2>
-                <div id="areaShow">
+                <div class="outputHere">
                     <label class="label">Area=</label>
                     <div style="display:inline;" class="areaShowHere">1/2*b*c*sin(A)</div>
                 </div>
@@ -132,7 +132,30 @@
     
     
     
-    <footer></footer>
+    <footer id="footer">
+        <ul class="footer-list">
+            <li class="list-item"><a target="_blank" href="mailto:manali.bagale@gmail.com" class="footer-links">
+                <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </li>
+            <li class="list-item"><a target="_blank" href="https://github.com/AnkitaBagale">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="list-item"><a target="_blank" href="https://www.linkedin.com/in/ankita-bagale1108">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="list-item"><a target="_blank" href="https://twitter.com/AnkitaB1108">
+                <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-item"><a target="_blank" href="https://ankitabagale-portfolio.netlify.app/">
+                <i class="fas fa-briefcase"></i>
+                </a>
+            </li>
+            
+        </ul>
+    </footer>
 
     <script src="calArea.js"></script>
 
