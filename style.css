@@ -19,6 +19,8 @@ body{
 
 .grid{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .verticalMiddle{
@@ -124,6 +126,7 @@ color: var(--primary-color);
 }
 .label{
     font-weight: bold;
+    display: inline-block;
 }
 
 /* triangle grahics in html and css */
@@ -226,6 +229,7 @@ display: inline-block;
 }
 .radio{
     padding: 0.5rem 1rem;
+    white-space: normal;
 }
 .radio label{
     cursor: pointer;
@@ -240,12 +244,13 @@ display: inline-block;
 
 #footer{
     width: 100%;
-    height: 6vh;
+    min-height: 6vh;
     background-color: rgb(30, 58, 138, 0.5);
 }
 .footer-list{
     height: inherit;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-inline-start: 0px;
@@ -256,5 +261,14 @@ display: inline-block;
 .list-item{
     list-style: none;
     font-size: 1.5rem;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 768px){
+    body{
+    background-image: url('bgTrianglesMob.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    }
 }

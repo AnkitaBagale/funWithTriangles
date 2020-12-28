@@ -25,16 +25,19 @@
             <!-- select option to calculate area -->
             <form class="formulaSelectionForm">
                 <div class="radio">
+                    <label class="label" for="calArea1">
                     <input type="radio" id="calArea1" name="areaCalOption" value="areaCalOption1">
-                    <label class="label" for="calArea1">If you have base and height length</label>
+                    If you have base and height length</label>
                 </div>
                 <div class="radio">
+                    <label class="label" for="calArea2">
                     <input type="radio" id="calArea2" name="areaCalOption" value="areaCalOption2">
-                    <label class="label" for="calArea2">If you have length of 3 sides</label>
+                    If you have length of 3 sides</label>
                 </div>
                 <div class="radio">
+                    <label class="label" for="calArea3">
                     <input type="radio" id="calArea3" name="areaCalOption" value="areaCalOption3">
-                    <label class="label" for="calArea3">If you have length of 2 sides and included angle</label>
+                    If you have length of 2 sides and included angle</label>
                 </div>
             </form>
 
@@ -53,10 +56,13 @@
                 </div>
                 
                 <form class="form" class="formForAreaCal">
-                    <label class="label">base=</label>
-                    <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required>
-                    <label class="label">height=</label>
-                    <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                    <label class="label">base=
+                        <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required> 
+                    </label>
+
+                    <label class="label">height=
+                        <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                    </label>
                     
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
@@ -80,12 +86,17 @@
                 
                 <form class="form" class="formForAreaCal">
                     
-                    <label class="label">a=</label>
-                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
-                    <label class="label">b=</label>
-                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
-                    <label class="label">c=</label>
-                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    <label class="label">a=
+                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="label">b=
+                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="label">c=
+                        <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
                     
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
@@ -109,13 +120,18 @@
                 
                 <form class="form" class="formForAreaCal">
                     
-                    <label class="label">b=</label>
-                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
-                    <label class="label">c=</label>
-                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
-                    <label class="label">∠A(deg)=</label>
-                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" max="360" required>
+                    <label class="label">b=
+                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                    </label>
                     
+                    <label class="label">c=
+                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="label">∠A(deg)=
+                        <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" max="360" required>
+                    </label>
+
                     <button class="button" id="submitBtn">calculate</button>
                 </form>
                 <h2>Area will be calculated here-</h2>
