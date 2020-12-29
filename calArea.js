@@ -7,6 +7,8 @@ var inputInOption1 = document.querySelectorAll(".inputInOption1");
 var inputInOption2 = document.querySelectorAll(".inputInOption2");
 var inputInOption3 = document.querySelectorAll(".inputInOption3");
 
+var errorDiv= document.querySelector(".error");
+
 var radios = document.forms[0].elements;
 console.log(radios);
 
@@ -37,11 +39,18 @@ document.forms[1].addEventListener('submit', (e)=>{
 
 document.forms[2].addEventListener('submit',(e)=>{
     e.preventDefault();
+    errorDiv.style.display = "none";
     var a= Number(inputInOption2[0].value)
     var b= Number(inputInOption2[1].value)
     var c= Number(inputInOption2[2].value)
+
+    if((a+b)>c && (b+c)>a && (a+c)>b){
     var s=a+b+c;
-    areaShowHere[1].innerText= Math.sqrt(s*(s-a)*(s-b)*(s-c));  
+    areaShowHere[1].innerText= Math.sqrt(s*(s-a)*(s-b)*(s-c));
+    }
+    else{
+        errorDiv.style.display = "block";
+    }  
 }, false )
 
 document.forms[3].addEventListener('submit',(e)=>{
