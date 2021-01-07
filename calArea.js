@@ -45,7 +45,7 @@ document.forms[2].addEventListener('submit',(e)=>{
     var c= Number(inputInOption2[2].value)
 
     if((a+b)>c && (b+c)>a && (a+c)>b){
-    var s=a+b+c;
+    var s=(a+b+c)/2;
     areaShowHere[1].innerText= Math.sqrt(s*(s-a)*(s-b)*(s-c));
     }
     else{
