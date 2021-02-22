@@ -72,10 +72,10 @@
     </footer>
 
     <script>
-        var inputSides= document.querySelectorAll(".inputSide");
-        var lengthA, lengthB;
-        var formHyp = document.querySelector("#formHyp");
-        var hypotenuse= document.querySelector(".hypShowHere");
+        const inputSides= document.querySelectorAll(".inputSide");
+        let lengthA, lengthB;
+        const formHyp = document.querySelector("#formHyp");
+        const hypotenuse= document.querySelector(".hypShowHere");
         formHyp.addEventListener('submit', (e)=>{
             e.preventDefault();
             lengthA = Number(inputSides[0].value);  
