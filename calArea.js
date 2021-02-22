@@ -1,15 +1,15 @@
 
 
-var areaCalBlock = document.querySelectorAll(".areaCalBlock");
-var areaShowHere = document.querySelectorAll(".areaShowHere");
+const areaCalBlock = document.querySelectorAll(".areaCalBlock");
+const areaShowHere = document.querySelectorAll(".areaShowHere");
 
-var inputInOption1 = document.querySelectorAll(".inputInOption1");
-var inputInOption2 = document.querySelectorAll(".inputInOption2");
-var inputInOption3 = document.querySelectorAll(".inputInOption3");
+const inputInOption1 = document.querySelectorAll(".inputInOption1");
+const inputInOption2 = document.querySelectorAll(".inputInOption2");
+const inputInOption3 = document.querySelectorAll(".inputInOption3");
 
-var errorDiv= document.querySelector(".error");
+const errorDiv= document.querySelector(".error");
 
-var radios = document.forms[0].elements;
+const radios = document.forms[0].elements;
 console.log(radios);
 
 radios[0].addEventListener('change', ()=>{
@@ -31,8 +31,8 @@ function showOrHideBlock(blockDivs, showDivIndex, hideDivIndex1, hideDivIndex2){
 
 document.forms[1].addEventListener('submit', (e)=>{
     e.preventDefault();
-    var b= Number(inputInOption1[0].value)
-    var h= Number(inputInOption1[1].value)
+    const b= Number(inputInOption1[0].value)
+    const h= Number(inputInOption1[1].value)
     areaShowHere[0].innerText = (b*h)/2
 
 }, false)
@@ -40,12 +40,12 @@ document.forms[1].addEventListener('submit', (e)=>{
 document.forms[2].addEventListener('submit',(e)=>{
     e.preventDefault();
     errorDiv.style.display = "none";
-    var a= Number(inputInOption2[0].value)
-    var b= Number(inputInOption2[1].value)
-    var c= Number(inputInOption2[2].value)
+    const a= Number(inputInOption2[0].value)
+    const b= Number(inputInOption2[1].value)
+    const c= Number(inputInOption2[2].value)
 
     if((a+b)>c && (b+c)>a && (a+c)>b){
-    var s=(a+b+c)/2;
+    const s=(a+b+c)/2;
     areaShowHere[1].innerText= Math.sqrt(s*(s-a)*(s-b)*(s-c));
     }
     else{
@@ -55,9 +55,9 @@ document.forms[2].addEventListener('submit',(e)=>{
 
 document.forms[3].addEventListener('submit',(e)=>{
     e.preventDefault();
-    var b = Number(inputInOption3[0].value)
-    var c = Number(inputInOption3[1].value)
-    var A = Number(inputInOption3[2].value)
+    const b = Number(inputInOption3[0].value)
+    const c = Number(inputInOption3[1].value)
+    const A = Number(inputInOption3[2].value)
     areaShowHere[2].innerText= (b*c*Math.sin(A*Math.PI/180))/2;  
 }, false )
 
